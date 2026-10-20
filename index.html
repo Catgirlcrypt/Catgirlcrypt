@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatGirlCrypt</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png?v=2">
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<header>
+  <div class="brand">CatGirlCrypt</div>
+  <nav>
+    <button class="nav-btn active" data-page="home">Home</button>
+    <button class="nav-btn" data-page="download">Payment</button>
+    <button class="nav-btn" data-page="how">Help</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="page active">
+    <div class="hero">
+      <pre class="art">⣿⡟⠙⠛⠋⠩⠭⣉⡛⢛⠫⠭⠄⠒⠄⠄⠄⠈⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡇⠄⠄⠄⠄⣠⠖⠋⣀⡤⠄⠒⠄⠄⠄⠄⠄⠄⠄⠄⠄⣈⡭⠭⠄⠄⠄⠉⠙
+⣿⡇⠄⠄⢀⣞⣡⠴⠚⠁⠄⠄⢀⠠⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄
+⣿⡇⠄⡴⠁⡜⣵⢗⢀⠄⢠⡔⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
+⣿⡇⡜⠄⡜⠄⠄⠄⠉⣠⠋⠠⠄⢀⡄⠄⠄⣠⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸
+⣿⠸⠄⡼⠄⠄⠄⠄⢰⠁⠄⠄⠄⠈⣀⣠⣬⣭⣛⠄⠁⠄⡄⠄⠄⠄⠄⠄⢀⣿
+⣏⠄⢀⠁⠄⠄⠄⠄⠇⢀⣠⣴⣶⣿⣿⣿⣿⣿⣿⡇⠄⠄⡇⠄⠄⠄⠄⢀⣾⣿
+⣿⣸⠈⠄⠄⠰⠾⠴⢾⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣾⢀⠁⠄⠄⠄⢠⢸⣿⣿
+⣿⣿⣆⠄⠆⠄⣦⣶⣦⣌⣿⣿⣿⣿⣷⣋⣀⣈⠙⠛⡛⠌⠄⠄⠄⠄⢸⢸⣿⣿
+⣿⣿⣿⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠈⠄⠄⠄⠄⠄⠈⢸⣿⣿
+⣿⣿⣿⠄⠄⠄⠘⣿⣿⣿⡆⢀⣈⣉⢉⣿⣿⣯⣄⡄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿
+⣿⣿⡟⡜⠄⠄⠄⠄⠙⠿⣿⣧⣽⣍⣾⣿⠿⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠃⢿⣿
+⣿⡿⠰⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠩⠔⠒⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠐⠘⣿
+⣿⠃⠃⠄⠄⠄⠄⠄⠄⣀⢀⠄⠄⡀⡀⢀⣤⣴⣤⣤⣀⣀⠄⠄⠄⠄⠄⠄⠁⢹</pre>
+      <h1>CatGirl<span>Crypt</span></h1>
+      <p class="tagline">meowing on your systems since 21</p>
+      <div class="hero-btns">
+        <button class="btn primary" data-page="download">Payment</button>
+        <button class="btn ghost" data-page="how">How it works</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="page">
+    <div class="card">
+      <div class="card-head">Payment</div>
+      <div class="card-body">
+        <div class="meta-row"><span class="label">Product</span><span>CatGirl Ransom</span></div>
+        <div class="meta-row"><span class="label">Price</span><span class="price-tag">$10.00</span></div>
+        <div class="meta-row"><span class="label">Method</span><span>BTC</span></div>
+
+        <div class="pay-section">
+          <div class="pay-title">Send Bitcoin</div>
+
+          <div class="pay-address-box">
+            <div class="pay-addr-label">
+              <span>Bitcoin (BTC)</span>
+              <span class="pay-network">Bitcoin</span>
+            </div>
+            <div class="pay-addr-row">
+              <code id="pay-address">bc1qpj9q0qkaa00pme96x3ctck3paze2lj277jfqc4</code>
+              <button class="btn ghost copy-btn" id="copy-addr" type="button">Copy</button>
+            </div>
+            <div class="pay-amount-row">
+              <span class="label">Send exactly</span>
+              <span>$10.00 in BTC</span>
+            </div>
+            <p class="pay-note">Send the equivalent of $10 in Bitcoin to the address above. Then Email payment@catgirlcrypt.live to veirfy payment. (1-2 hours)</p>
+          </div>
+
+          <div class="pay-actions">
+            <button class="btn primary full" id="pay-confirm" type="button">I've sent</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="page">
+    <div class="card">
+      <div class="card-head">Notice!.</div>
+      <div class="card-body steps">
+        <div class="step"><span class="num">01</span><span>Any further issues can we reported to payment@catgirlcrypt.live</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="overlay" id="pay-overlay" hidden>
+  <div class="ad">
+    <div class="ad-title">Confirm your purchase</div>
+    <div class="ad-desc">
+      To confirm your purchase please Email <strong>payment@Catgirlcrypt.live</strong> with proof of purchase and a screenshot.
+    </div>
+    <a class="btn primary full" id="open-telegram" href="payment@Catgirlcrypt.live" target="_blank" rel="noopener">Eamil Now! — @CatGirlEcrypt</a>
+    <button class="btn ghost full" id="close-pay" style="margin-top:8px">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
